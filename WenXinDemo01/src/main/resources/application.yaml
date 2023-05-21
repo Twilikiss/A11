@@ -1,0 +1,47 @@
+server:
+  port: 7701
+
+spring:
+  profiles:
+    active: dev
+  #设置swagger2,springboot2.6.x版本默认的匹配规则为： path-pattern-matcher，而swagger2的匹配规则为ant_path_matcher
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+  # mysql数据库连接
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://159.75.137.185:3306/wenxin
+    username: root
+    password: WeiYun233!
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  # 下面是mongodb的相关依赖
+  data:
+    mongodb:
+      # 如果选择配置了uri: mongodb://139.9.208.233:27017/test 就不能配置其他信息
+      # 详见org/springframework/boot/autoconfigure/mongo/MongoPropertiesClientSettingsBuilderCustomizer.java
+      username: 'admin'
+      port: 27017
+      host: 159.75.137.185
+      database: test
+      password: 'Elysia233Lovehuman.@text'
+  # 下面是redis的相关配置
+  redis:
+    host: 159.75.137.185
+    port: 6379
+    database: 0
+    connect-timeout: 100000
+    lettuce:
+      pool:
+        max-active: 20
+        # 最大阻塞等待时间（负数表示无限制）
+        max-wait: -1
+        max-idle: 5
+        min-idle: 0
+    password: Elysia233
+logging:
+  level:
+    root: debug
