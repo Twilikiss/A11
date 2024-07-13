@@ -1,13 +1,17 @@
 package com.elysia.apiTest;
 
-import net.minidev.json.JSONObject;
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
 import okhttp3.*;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.io.File;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 /**
  * @author cxb
@@ -24,8 +28,7 @@ public class demoTest {
     /**
      * 鉴权测试——获取token，便于后面调取相关服务
      */
-    @Test
-    public void tokenTest() throws IOException {
+    public String tokenTest(String client_id, String client_secret) throws IOException {
         MediaType mediaType = MediaType.parse("application/json");
         RequestBody body = RequestBody.create(mediaType, "");
         Request request = new Request.Builder()
@@ -35,7 +38,7 @@ public class demoTest {
                 .addHeader("Accept", "application/json")
                 .build();
         Response response = HTTP_CLIENT.newCall(request).execute();
-        System.out.println(response.body().string());
+        return response.body().string();
     }
 
     @Test
@@ -105,4 +108,90 @@ public class demoTest {
         Response response = client.newCall(request).execute();
         System.out.println((response.message()));
     }
+
+    // 测试ocr的相关接口
+    @Test
+    public void OCRTest() throws IOException {
+        String API_KEY = "ZzBycYXZDr3wk6tG4IXMDIRZ";
+        String SECRET_KEY = "lL16oHxky5X0EpANLXxH78WOO2WIklRC";
+        String token = this.tokenTest(API_KEY, SECRET_KEY);
+        OkHttpClient HTTP_CLIENT = new OkHttpClient().newBuilder().build();
+        MediaType mediaType = MediaType.parse("application/x-www-form-urlencoded");
+        Map<String, Object> param = new HashMap<>();
+//        param.put(, );
+        String s = JSONObject.toJSONString(param);
+        RequestBody body =
+                RequestBody.create(s, mediaType);
+        Request request = new Request.Builder()
+                .url("https://aip.baidubce.com/rest/2.0/ocr/v1/accurate_basic?access_token=" + token)
+                .method("POST", body)
+                .addHeader("Content-Type", "application/x-www-form-urlencoded")
+                .addHeader("Accept", "application/json")
+                .build();
+        Response response = HTTP_CLIENT.newCall(request).execute();
+    }
+
+    @Test
+    public void testOss() {
+        String nlpResult = "{\n" +
+                "    \"results\": [\n" +
+                "        {\n" +
+                "            \"score\": 0.6082634968850668,\n" +
+                "            \"word\": \"啼鸟\"\n" +
+                "        },\n" +
+                "        {\n" +
+                "            \"score\": 0.39173650311493324,\n" +
+                "            \"word\": \"雨声\"\n" +
+                "        }\n" +
+                "    ],\n" +
+                "    \"log_id\": 1663498283197531600\n" +
+                "}";
+        JSONObject jsonObject = JSON.parseObject(nlpResult);
+        JSONArray results = jsonObject.getJSONArray("results");
+        String words = "";
+        for (int i = 0; i < results.size();i++) {
+            words += results.getJSONObject(i).getString("word") + ",";
+        }
+        System.out.println(words);
+    }
+
+    @Test
+    public void test05() throws ParseException {
+        String url = "http://www.elysialove.xyz/wenxin/file/01.pdf";
+        String filePath = "/data/wenxin/file/" + url.substring(38);
+        System.out.println(filePath);
+    }
+
+    @Test
+    public void test06() throws IOException {
+//        private String client_id = "yPNA7bGZtMBaMwEfj9Az93Li";
+//        private String client_secret = "soFNhbaYCLbYlXDnKddumpZAyRvApq10";
+        String API_KEY = "yPNA7bGZtMBaMwEfj9Az93Li";
+        String SECRET_KEY = "soFNhbaYCLbYlXDnKddumpZAyRvApq10";
+//        String token = this.tokenTest(API_KEY, SECRET_KEY);
+        String token = "24.96e894bf73afa7cce640d8b1c436c52e.2592000.1690376219.282335-35339304";
+        OkHttpClient HTTP_CLIENT = new OkHttpClient().newBuilder().build();
+        MediaType mediaType = MediaType.parse("application/json");
+        String encode = FileUtils.getFileContentAsBase64("C:/Users/mlp52/Desktop/图集/22602766_0_final.png", false);
+        Map<String, Object> param = new HashMap<>();
+        param.put("text", "微信头像，二次元女生，半身像，尽量人物处于正中间，细致唯美，风格偏可爱风");
+        param.put("image", encode);
+        String s = JSONObject.toJSONString(param);
+        RequestBody body =
+                RequestBody.create(s, mediaType);
+        Request request = new Request.Builder()
+                .url("https://aip.baidubce.com/rpc/2.0/ai_custom/v1/VQA/ai_painting_match?access_token=" + token)
+                .method("POST", body)
+                .addHeader("Content-Type", "application/json")
+//                .addHeader("Accept", "application/json")
+                .build();
+        Response response = HTTP_CLIENT.newCall(request).execute();
+        System.out.println(response.body().string());
+    }
+
+    @Test
+    public void No01() {
+
+    }
+
 }

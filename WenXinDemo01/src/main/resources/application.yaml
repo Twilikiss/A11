@@ -1,6 +1,9 @@
 server:
   port: 7701
-
+  ssl:
+    key-store: classpath:elysialove.xyz.pfx
+    key-store-type: PKCS12
+    key-store-password: b4b87g6cp057
 spring:
   profiles:
     active: dev
@@ -8,9 +11,7 @@ spring:
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
-
   # mysql数据库连接
-
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://159.75.137.185:3306/wenxin
@@ -27,7 +28,7 @@ spring:
       port: 27017
       host: 159.75.137.185
       database: test
-      password: 'Elysia233Lovehuman.@text'
+      password: 'Elysia233loveHuman.@test'
   # 下面是redis的相关配置
   redis:
     host: 159.75.137.185
@@ -42,6 +43,67 @@ spring:
         max-idle: 5
         min-idle: 0
     password: Elysia233
+
+  servlet:
+    multipart:
+      max-file-size: 4MB
+      max-request-size: 32MB
+      enabled: true
+  #返回json的全局时间格式
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+#配置mapper xml文件的路径
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
 logging:
   level:
     root: debug
+
+# 用户自定义的相关配置
+user:
+  message:
+    apiKey: "f383fb2409144c728c1ce790a0df7962"
+  baidu:
+    auth:
+      api-url: https://openapi.baidu.com/oauth/2.0/authorize
+      api-key: fW4tWaWt66ITYe97OEqTGPKt
+      secret-key: SyByPLV07pSPCgNScnW7F8eV7iQcvypp
+      redirect-url: http://www.elysialove.xyz:7701/user/auth/Oauth2/baidu/redirect
+  jwt:
+    jwtHead: "Bearer"
+  file:
+    server: "www.elysialove.xyz"
+    icons_path: "/data/wenxin/icons"
+    ocr_path: "/data/wenxin/ocr"
+    image_classify_path: "/data/wenxin/imageClassify"
+    reference_path: "/data/wenxin/text2image"
+    image_process: "/data/wenxin/ImageProcess"
+    file_path: "/data/wenxin/file"
+#    server: "localhost:7701"
+#    icons_path: "D:/通用文件夹/A11WenXin/temp/icons"
+#    ocr_path: "D:/通用文件夹/A11WenXin/temp/ocr"
+#    image_classify_path: "D:/通用文件夹/A11WenXin/temp/imageClassify"
+
+
+secure:
+  ignored:
+    # 白名单路径
+    urls:
+      - "/"
+      - "/csrf"
+      - "/doc.html"
+      - "/swagger-ui*"
+      - "/swagger-ui/**"
+      - "/swagger/**"
+      - "/swagger-resources/**"
+      - "/**/*.js"
+      - "/**/*.css"
+      - "/**/*.png"
+      - "/**/*.ico"
+      - "/webjars/springfox-swagger-ui/**"
+      - "/user/auth/**"
