@@ -119,7 +119,7 @@ http://159.75.137.185:7701/swagger-ui.html
  "code": 200,
  "message": "成功",
  "data": {
-  "phone": "19820754340",
+  "phone": "",
   "status": **true**,
   "waitingTime": -1
  },
@@ -134,7 +134,7 @@ http://159.75.137.185:7701/swagger-ui.html
  "code": 201,
  "message": "失败",
  "data": {
-  "phone": "19820754340",
+  "phone": "",
   "status": **false**,
   "waitingTime": 39
  },
