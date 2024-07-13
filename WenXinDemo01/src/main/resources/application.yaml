@@ -1,9 +1,9 @@
 server:
   port: 7701
   ssl:
-    key-store: classpath:elysialove.xyz.pfx
+    key-store: classpath:xxx.pfx
     key-store-type: PKCS12
-    key-store-password: b4b87g6cp057
+    key-store-password: xxxxxxx
 spring:
   profiles:
     active: dev
@@ -14,24 +14,24 @@ spring:
   # mysql数据库连接
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://159.75.137.185:3306/wenxin
-    username: root
-    password: WeiYun233!
+    url: jdbc:mysql://xxxxx:3306/wenxin
+    username: xxx
+    password: xxxx
     type: com.alibaba.druid.pool.DruidDataSource
 
   # 下面是mongodb的相关依赖
   data:
     mongodb:
-      # 如果选择配置了uri: mongodb://139.9.208.233:27017/test 就不能配置其他信息
+      # 如果选择配置了uri: mongodb://xxxxxx:27017/test 就不能配置其他信息
       # 详见org/springframework/boot/autoconfigure/mongo/MongoPropertiesClientSettingsBuilderCustomizer.java
       username: 'admin'
       port: 27017
-      host: 159.75.137.185
-      database: test
-      password: 'Elysia233loveHuman.@test'
+      host: xxx.xxx.xxx.xxx
+      database: xxx
+      password: 'xxxx'
   # 下面是redis的相关配置
   redis:
-    host: 159.75.137.185
+    host: xxxx
     port: 6379
     database: 0
     connect-timeout: 100000
@@ -42,7 +42,7 @@ spring:
         max-wait: -1
         max-idle: 5
         min-idle: 0
-    password: Elysia233
+    password: xxxxx
 
   servlet:
     multipart:
@@ -67,12 +67,12 @@ logging:
 # 用户自定义的相关配置
 user:
   message:
-    apiKey: "f383fb2409144c728c1ce790a0df7962"
+    apiKey: "apiKey"
   baidu:
     auth:
       api-url: https://openapi.baidu.com/oauth/2.0/authorize
-      api-key: fW4tWaWt66ITYe97OEqTGPKt
-      secret-key: SyByPLV07pSPCgNScnW7F8eV7iQcvypp
+      api-key: xxxxx
+      secret-key: xxxxx
       redirect-url: http://www.elysialove.xyz:7701/user/auth/Oauth2/baidu/redirect
   jwt:
     jwtHead: "Bearer"
