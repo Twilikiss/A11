@@ -7,6 +7,9 @@ A11前端代码--->前端代码
 
 WenXinDemo01 --->后端代码
 
+需要先配置ssl证书的相关配置或者在yaml配置文件中把ssl的相关配置注释掉
+![img](picture/ksohtml14928/Snipaste_2024-07-13_23-43-48.jpg) 
+
 
 ### 大模型发展背景
 
