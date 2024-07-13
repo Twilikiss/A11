@@ -1,0 +1,79 @@
+Page {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#c2aeff, #ffffff);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.home-user {
+  width: 100%;
+  height: 230rpx;
+  background-color: #eee;
+  box-shadow: 1px 4px 1px #c3c3c3;
+  margin-top: 80rpx;
+  display: flex;
+  justify-content: space-evenly;
+}
+.home-user-img {
+  width: 30%;
+  height: 100%;
+  position: relative;
+}
+.home-user-img image {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  transform: translate(40%, 40%);
+  border-radius: 50%;
+}
+.home-user-text {
+  width: 70%;
+  height: 100%;
+  /* background-color: aqua; */
+  position: relative;
+}
+.home-user-text .home-user-name {
+  font-size: 45rpx;
+  color: #f09c42;
+  position: absolute;
+  bottom: 130rpx;
+  left: 20rpx;
+  font-weight: 700;
+}
+.home-user-text .home-user-sex {
+  font-size: 26rpx;
+  color: #f09c42;
+  position: absolute;
+  left: 40rpx;
+  bottom: 80rpx;
+  font-weight: 700;
+}
+.home-main {
+  width: 100%;
+  height: 600rpx;
+  /* background-color: #eee; */
+  margin-top: 120rpx;
+  /* padding-top: 80rpx; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.home-main .home-main-item {
+  width: 90%;
+  background-color: #eee;
+  height: 150rpx;
+  margin: auto;
+  text-align: center;
+  line-height: 150rpx;
+  font-size: 40rpx;
+  box-shadow: 10rpx 10rpx 10rpx #c3c3c3;
+}
+.home-foot button {
+  width: 60%;
+  background-color: #76d4d4;
+  border-radius: 50rpx;
+  color: #ffffff;
+  font-weight: 700;
+  margin-top: 50rpx;
+}

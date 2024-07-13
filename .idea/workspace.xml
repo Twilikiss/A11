@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d6d210e7-f592-4b6d-a3f5-b19e726f8a83" name="更改" comment="新增">
+      <change afterPath="$PROJECT_DIR$/.idea/$PROJECT_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/qaplug_profiles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/WenXinDemo01-1.0-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/WenXinDemo10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/Elysia.jks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/DemoAppMain7001.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/Repository/ArticleRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/Repository/GalleryRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/Repository/ImageClassifyRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/Repository/ImageProcessRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/Repository/ModelRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/Repository/OcrRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/Repository/Text2ImageRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/Repository/WenXinRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/config/HttpToHttpsConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/config/IgnoreUrlsConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/config/InterceptorConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/config/MybatisPlusConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/config/RedisConfig$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/config/RedisConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/config/Swagger2Config.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/controller/AccountController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/controller/AiPaintingController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/controller/ArticleController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/controller/GalleryController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/controller/ImageApiController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/controller/ModelController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/controller/TextApiController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/controller/UserInfoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/controller/WenXinController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/exception/GlobalExceptionHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/exception/WenXinException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/interceptor/JwtInterceptor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/mapper/UserInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/base/BaseEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/base/BaseMongoEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/entity/system/Article.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/entity/system/Gallery.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/entity/system/ModelFeedbackAdvanced.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/entity/system/TextSession.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/entity/system/WenXinHistory.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/entity/user/MessageStatus.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/entity/user/UserInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/entity/user/UserLoginRecord.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/result/Image2TextResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/result/ImageClassifyResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/result/ImageProcessResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/result/OcrResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/result/Text2ImageResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/result/utils/Result.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/result/utils/ResultCodeEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/vo/FeedbackAiPaintingAdvancedVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/vo/GalleryVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/vo/LoginVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/vo/PromptGenerationVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/vo/Text2ImageAdvancedSaveVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/vo/Text2ImageAdvancedVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/vo/Text2ImageBaseVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/vo/UserCompleteInfoVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/vo/UserInfoVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/vo/WeiXinLoginVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/vo/WenXinChatVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/model/vo/WenXinHistoryVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/service/AccountService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/service/AiPlatformApiService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/service/ArticleService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/service/GalleryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/service/ImageClassifyService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/service/ImageProcessService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/service/Impl/AccountServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/service/Impl/AiPlatformApiServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/service/Impl/ArticleServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/service/Impl/GalleryServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/service/Impl/ImageClassifyServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/service/Impl/ImageProcessServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/service/Impl/ModelServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/service/Impl/NlpServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/service/Impl/OcrServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/service/Impl/WenXinServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/service/ModelService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/service/NlpService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/service/OcrService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/service/WenXinService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/utils/AccessTokenUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/utils/FileUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/utils/IpUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/utils/MessageUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/utils/RedisUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/utils/StringUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/com/elysia/demoApp/utils/helper/JwtHelper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/elysialove.xyz.pfx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/keystorePass.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/mapper/UserInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/classes/public.key" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WenXinDemo01/target/test-classes/com/elysia/demoApp/test01.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apiTest/target/classes/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apiTest/target/classes/com/elysia/apiTest/ApiTestMain7700.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apiTest/target/classes/com/elysia/apiTest/controller/ApiController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apiTest/target/test-classes/com/elysia/apiTest/FileUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apiTest/target/test-classes/com/elysia/apiTest/demoTest.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Java setting\apache-maven-3.8.3\repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../Java setting/apache-maven-3.8.3" />
+        <option name="userSettingsFile" value="D:\Java setting\apache-maven-3.8.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2PtsJc8wQvHWa1EVOpXB5u2kJnU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "D:/通用文件夹/A11",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.35632184",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "spring.configuration.checksum": "0ccdb4f7b1d09b5993ef7968f0ebe9ea",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\通用文件夹\A11WenXin" />
+      <recent name="D:\通用文件夹\A11WenXin\WenXinDemo01\src\main\resources" />
+      <recent name="D:\通用文件夹\A11WenXin\A11\picture" />
+      <recent name="D:\通用文件夹\A11WenXin\A11\picture\接口文档" />
+      <recent name="D:\通用文件夹\A11WenXin\WenXinDemo01\src\main\java\com\elysia\demoApp" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.elysia.apiTest" />
+      <recent name="com.elysia.demoApp.config" />
+      <recent name="com.elysia.demoApp.model.result" />
+      <recent name="com.elysia.demoApp.model.entity" />
+      <recent name="com.elysia.demoApp.model.vo" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.DemoAppMain7001">
+    <configuration name="demoTest.No01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.elysia.apiTest.demoTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.elysia.apiTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.elysia.apiTest" />
+      <option name="MAIN_CLASS_NAME" value="com.elysia.apiTest.demoTest" />
+      <option name="METHOD_NAME" value="No01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test01.test07" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WenXinDemo01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.elysia.demoApp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.elysia.demoApp" />
+      <option name="MAIN_CLASS_NAME" value="com.elysia.demoApp.test01" />
+      <option name="METHOD_NAME" value="test07" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test01.testPhoneNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WenXinDemo01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.elysia.demoApp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.elysia.demoApp" />
+      <option name="MAIN_CLASS_NAME" value="com.elysia.demoApp.test01" />
+      <option name="METHOD_NAME" value="testPhoneNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test01.wenxinApiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WenXinDemo01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.elysia.demoApp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.elysia.demoApp" />
+      <option name="MAIN_CLASS_NAME" value="com.elysia.demoApp.test01" />
+      <option name="METHOD_NAME" value="wenxinApiTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTestMain7700" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="com.elysia.apiTest.demoTest" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.elysia.apiTest.ApiTestMain7700" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoAppMain7001" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="WenXinDemo01" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.elysia.demoApp.DemoAppMain7001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.elysia.demoApp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.test01.testPhoneNumber" />
+        <item itemvalue="Spring Boot.DemoAppMain7001" />
+        <item itemvalue="JUnit.test01.test07" />
+        <item itemvalue="JUnit.test01.wenxinApiTest" />
+        <item itemvalue="JUnit.demoTest.No01" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="d6d210e7-f592-4b6d-a3f5-b19e726f8a83" name="更改" comment="" />
+      <created>1684287649294</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684287649294</updated>
+      <workItem from="1684287651487" duration="9190000" />
+      <workItem from="1684394510466" duration="13977000" />
+      <workItem from="1684486053692" duration="10143000" />
+      <workItem from="1684742253890" duration="13376000" />
+      <workItem from="1684770246632" duration="24103000" />
+      <workItem from="1684895230905" duration="10298000" />
+      <workItem from="1685263322894" duration="61450000" />
+      <workItem from="1685622349281" duration="3722000" />
+      <workItem from="1685690990216" duration="8306000" />
+      <workItem from="1685780206344" duration="3942000" />
+      <workItem from="1686295280831" duration="13683000" />
+      <workItem from="1686356732398" duration="11725000" />
+      <workItem from="1686443040157" duration="4812000" />
+      <workItem from="1686538767679" duration="2446000" />
+      <workItem from="1686625586256" duration="15647000" />
+      <workItem from="1686788716298" duration="9150000" />
+      <workItem from="1686897702490" duration="15680000" />
+      <workItem from="1687004315391" duration="7960000" />
+      <workItem from="1687085896736" duration="1202000" />
+      <workItem from="1687141254536" duration="1209000" />
+      <workItem from="1687315919561" duration="1160000" />
+      <workItem from="1687336838412" duration="1419000" />
+      <workItem from="1687404790172" duration="2145000" />
+      <workItem from="1687416740766" duration="10169000" />
+      <workItem from="1687486531731" duration="27385000" />
+      <workItem from="1687577816840" duration="19085000" />
+      <workItem from="1687749986393" duration="10181000" />
+      <workItem from="1687870065896" duration="1196000" />
+      <workItem from="1688130420771" duration="4050000" />
+      <workItem from="1688178719863" duration="20484000" />
+      <workItem from="1688267633660" duration="12507000" />
+      <workItem from="1688370950639" duration="10694000" />
+      <workItem from="1688397388143" duration="211000" />
+      <workItem from="1688440674315" duration="4431000" />
+      <workItem from="1688656558684" duration="2111000" />
+      <workItem from="1688781632104" duration="11393000" />
+      <workItem from="1688888675533" duration="3950000" />
+      <workItem from="1688973644429" duration="13907000" />
+      <workItem from="1689042199995" duration="22131000" />
+      <workItem from="1689125113332" duration="29813000" />
+      <workItem from="1689177967797" duration="1326000" />
+      <workItem from="1689212613934" duration="18759000" />
+      <workItem from="1689254347483" duration="9310000" />
+      <workItem from="1689299094268" duration="1135000" />
+      <workItem from="1689304994083" duration="14118000" />
+      <workItem from="1689447029705" duration="15291000" />
+      <workItem from="1689644583809" duration="13454000" />
+      <workItem from="1689733448283" duration="22788000" />
+      <workItem from="1689845374499" duration="69625000" />
+      <workItem from="1690163807172" duration="20854000" />
+      <workItem from="1690470125633" duration="14465000" />
+      <workItem from="1690887175682" duration="354000" />
+      <workItem from="1691807767121" duration="3008000" />
+      <workItem from="1691889140750" duration="3022000" />
+      <workItem from="1692112100062" duration="584000" />
+      <workItem from="1692503278347" duration="1123000" />
+      <workItem from="1692780134180" duration="9000" />
+      <workItem from="1695383144134" duration="1872000" />
+      <workItem from="1695902799352" duration="270000" />
+      <workItem from="1710852270611" duration="2712000" />
+      <workItem from="1710921983012" duration="739000" />
+      <workItem from="1710940565913" duration="2653000" />
+      <workItem from="1711023282433" duration="716000" />
+      <workItem from="1711090648626" duration="3374000" />
+      <workItem from="1711110565841" duration="1194000" />
+      <workItem from="1711195004963" duration="1987000" />
+      <workItem from="1711286784556" duration="1908000" />
+      <workItem from="1711375667326" duration="1332000" />
+      <workItem from="1712310089147" duration="342000" />
+      <workItem from="1712748833586" duration="74000" />
+      <workItem from="1712748916957" duration="105000" />
+      <workItem from="1713408814804" duration="777000" />
+      <workItem from="1713536531573" duration="1605000" />
+      <workItem from="1713615447894" duration="622000" />
+      <workItem from="1713685466039" duration="22000" />
+      <workItem from="1714317151506" duration="363000" />
+      <workItem from="1714324581994" duration="864000" />
+      <workItem from="1714351431545" duration="2719000" />
+      <workItem from="1714388755073" duration="669000" />
+      <workItem from="1714401911616" duration="2700000" />
+      <workItem from="1715515521075" duration="760000" />
+      <workItem from="1718587983060" duration="2707000" />
+      <workItem from="1718807052937" duration="208000" />
+      <workItem from="1718863942641" duration="4204000" />
+      <workItem from="1720013781076" duration="2368000" />
+      <workItem from="1720235997683" duration="188000" />
+      <workItem from="1720250139297" duration="1560000" />
+      <workItem from="1720883104811" duration="1240000" />
+    </task>
+    <task id="LOCAL-00001" summary="demo01">
+      <created>1684668051802</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684668051802</updated>
+    </task>
+    <task id="LOCAL-00002" summary="demo01">
+      <created>1684668107468</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684668107468</updated>
+    </task>
+    <task id="LOCAL-00003" summary="无">
+      <created>1684668600836</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684668600836</updated>
+    </task>
+    <task id="LOCAL-00004" summary="页面布局">
+      <created>1684742743754</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684742743754</updated>
+    </task>
+    <task id="LOCAL-00005" summary="文档相关说明">
+      <created>1685625313819</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685625313819</updated>
+    </task>
+    <task id="LOCAL-00006" summary="文档相关说明">
+      <created>1686456063445</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686456063445</updated>
+    </task>
+    <task id="LOCAL-00007" summary="文档新增说明">
+      <created>1686485577830</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686485577830</updated>
+    </task>
+    <task id="LOCAL-00008" summary="文档新增说明">
+      <created>1686486015034</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1686486015034</updated>
+    </task>
+    <task id="LOCAL-00009" summary="文档新增说明">
+      <created>1686486136261</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1686486136261</updated>
+    </task>
+    <task id="LOCAL-00010" summary="文档新增说明">
+      <created>1687012689728</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1687012689728</updated>
+    </task>
+    <task id="LOCAL-00011" summary="文档新增说明">
+      <created>1687406198293</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1687406198293</updated>
+    </task>
+    <task id="LOCAL-00012" summary="文档新增说明">
+      <created>1688285802330</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1688285802330</updated>
+    </task>
+    <task id="LOCAL-00013" summary="文档新增说明">
+      <created>1688285858048</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1688285858048</updated>
+    </task>
+    <task id="LOCAL-00014" summary="文档新增说明">
+      <created>1689090235321</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1689090235321</updated>
+    </task>
+    <task id="LOCAL-00015" summary="文档新增说明">
+      <created>1689091142369</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1689091142369</updated>
+    </task>
+    <task id="LOCAL-00016" summary="新增">
+      <created>1720883559620</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1720883559620</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="demo01" />
+    <MESSAGE value="无" />
+    <MESSAGE value="页面布局" />
+    <MESSAGE value="文档相关说明" />
+    <MESSAGE value="文档新增说明" />
+    <MESSAGE value="新增" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/WenXinDemo01/src/main/java/com/elysia/demoApp/controller/ArticleController.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/WenXinDemo01/src/main/java/com/elysia/demoApp/service/Impl/ArticleServiceImpl.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/WenXinDemo01/src/test/java/com/elysia/demoApp/test01.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="okhttp3.Response" memberName="body" />
+        <PinnedItemInfo parentTag="okhttp3.Request" memberName="headers" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="((LinkedHashMap.Entry)((LinkedHashMap)placeSelectedMapConfig.place).entrySet().toArray()[0]).getValue()" custom="java.util.LinkedHashMap,java.util.LinkedHashMap.Entry" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

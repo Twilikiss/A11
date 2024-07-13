@@ -1,0 +1,18 @@
+Page {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#c2aeff, #ffffff);
+}
+.querydraw-header {
+}
+.querydraw-header .querydraw-item {
+  width: 100%;
+  height: 250rpx;
+  margin: 0 auto;
+  margin-top: 40rpx;
+  box-shadow: 10rpx 10rpx 10rpx #c3c3c3;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}

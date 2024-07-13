@@ -1,0 +1,11 @@
+<van-uploader bind:after-read="identify" accept="image|file" max-count="1">
+    <view class="teletextConverter-header">点击上传文件</view>
+</van-uploader>
+<view class='teletextConverter-main' wx:if="{{flag}}">
+    <view bind:tap="getAns" class="teletextConverter-main-success">文件上传成功</view>
+    <view class="teletextConverter-main-creatTime">创建时间:{{creatTime}}</view>
+    <view class="teletextConverter-main-endTime">完成时间:{{endTime}}</view>
+    <view>转换结果如下：</view>
+    <view class="teletextConverter-main-url">{{word}}</view>
+    <view bind:tap="download" class="teletextConverter-main-copy">点击复制链接,在浏览器打开</view>
+</view>

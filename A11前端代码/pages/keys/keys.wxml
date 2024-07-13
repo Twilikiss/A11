@@ -1,0 +1,22 @@
+<view class="keys-header" wx:if="{{flags}}">
+    <image class="" src="{{fileUrl}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+</view>
+<view class="keys-textarea" wx:if="{{flags}}">
+    <textarea maxlength="200" auto-height="true" class="input" name="remark" bindinput="drwasText" value="{{textVal}}" auto-focus="true"></textarea>
+</view>
+<view class="keys-options" wx:if="{{flag}}">
+    <!-- <view class="keys-place">
+        <van-dropdown-menu>
+            <van-dropdown-item bind:change="getPlace" value="{{ value1 }}" options="{{ option1 }}" />
+        </van-dropdown-menu>
+    </view> -->
+    <view class="keys-resolution">
+        <van-dropdown-menu>
+            <van-dropdown-item bind:change="getResolution" value="{{ value4 }}" options="{{ option4 }}" />
+        </van-dropdown-menu>
+    </view>
+</view>
+<view class="keys_next" wx:if="{{flags}}">
+    <button bind:tap="nextKeys" wx:if="{{!flag}}">提取关键词</button>
+    <button bind:tap="nextStyle" wx:else>下一步</button>
+</view>

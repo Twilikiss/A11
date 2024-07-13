@@ -1,0 +1,44 @@
+Page {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#c2aeff, #ffffff);
+}
+.function-header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-evenly; */
+  margin-top: 10rpx;
+}
+.function-header .function-item {
+  width: 33%;
+  height: 250rpx;
+  background-color: #ffffff;
+  /* margin-top: 20rpx; */
+  border-bottom: 1px solid #c4c4c4;
+  border-right: 1px solid #c4c4c4;
+  position: relative;
+}
+.function-header .function-item image {
+  width: 200rpx;
+  height: 200rpx;
+  position: absolute;
+  top: 20rpx;
+  left: 16rpx;
+  /* transform: translate(-50%, -50%); */
+}
+.function-header .function-item .function-uploadImg image {
+  width: 200rpx;
+  height: 200rpx;
+  position: absolute;
+  top: -20rpx;
+  left: 16rpx;
+  /* transform: translate(-50%, -50%); */
+}
+.function-header .function-item .function-item-text {
+  text-align: center;
+  /* position: absolute; */
+  /* bottom: 20rpx; */
+  /* left: 80rpx; */
+  line-height: 400rpx;
+}

@@ -1,0 +1,13 @@
+<view class="style-header">请选择作画主体风格</view>
+<scroll-view class="new-scroll" scroll-y="true" style="height:1000rpx; white-space: nowrap; margin-top: 50rpx; background-color:#ffffff">
+    <view class="style-group">
+        <view wx:for="{{styleInfo}}" class="{{item.flag==true? 'style-select': 'style-item'}}" bind:tap="getStyle" data-index="{{index}}">
+            <image class="" src="{{item.url}}" />
+            <view class="style-item-text">{{item.text}}</view>
+        </view>
+    </view>
+</scroll-view>
+<view class="style-text">所选主体风格：{{styleInfo[id].text}}</view>
+<view class="style-btn">
+    <button bind:tap="nextotherStyle">下一步</button>
+</view>

@@ -1,0 +1,18 @@
+<view class="otherstyle-header">请选择附加元素:</view>
+<view class="otherstyle-select">
+    <view class="otherstyle-select-text" wx:for="{{other}}">
+        {{item}}
+        <text class="" bind:tap="delete" data-index="{{index}}">X</text>
+    </view>
+</view>
+<scroll-view class="new-scroll" scroll-y="true" style="width:90%; height:800rpx; white-space: nowrap;  background-color:#ffffff; border:1px solid #a9b1dc; box-shadow: 5px 5px 10px #c8c8c8;margin:0 auto;margin-top: 50rpx;">
+    <view class="otherstyle-main">
+        <view class="otherstyle-item" wx:for="{{otherStyle}}" bind:tap="getOther" data-index='{{index}}'>
+            {{item}}
+        </view>
+    </view>
+</scroll-view>
+<view class="otherstyle-btn">
+    <button bind:tap="gettaskId">确定</button>
+    <button bind:tap="nextDraws">绘画</button>
+</view>

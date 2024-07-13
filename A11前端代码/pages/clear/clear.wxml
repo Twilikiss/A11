@@ -1,0 +1,7 @@
+<view class="clear-title">结果如下:</view>
+<view class="clear-img">
+    <image src="data:image/png;base64,{{imgUrl}}"></image>
+</view>
+<view class="clear-save">
+    <button bind:tap="save">保存图片到相册</button>
+</view>

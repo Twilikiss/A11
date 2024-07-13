@@ -1,0 +1,22 @@
+<view class="information-header">
+    <image class="" src="../image/logo.png" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+</view>
+<view class="information-img">
+    <van-uploader max-count="1" bind:after-read="afterRead" class="information-uploadImg">
+        <image class="" src="{{fileList}}" />
+    </van-uploader>
+</view>
+<!-- <view class="information-radio">
+    性别
+    <van-radio-group value="{{ radio }}" bind:change="onChange" direction="horizontal">
+        <van-radio name="1" icon-size="16px" shape="square">男</van-radio>
+        <van-radio name="2" icon-size="16px" shape="square">女</van-radio>
+    </van-radio-group>
+</view> -->
+<!-- <view class="information-date">
+    <van-cell title="出生日期" value="{{ date }}" bind:click="onDisplay" />
+    <van-calendar show="{{ show }}" bind:close="onClose" bind:confirm="onConfirm" min-date="{{ minDate }}" max-date="{{ maxDate }}" />
+</view> -->
+<view class="information-next">
+    <button bind:tap="next">确认信息</button>
+</view>

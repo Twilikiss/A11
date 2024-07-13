@@ -1,0 +1,28 @@
+<view class="querydraw-header">
+    <van-tabs active="{{ active }}" bind:change="onChange">
+        <van-tab title="全部">
+            <view class="querydraw-item" wx:for="{{info}}">
+                <view class="querydraw-title">绘画文本: {{item.input.text}}</view>
+                <view class="querydraw-style">绘画风格: {{item.input.style}}</view>
+                <view class="querydraw-id">绘画生成ID: {{item.id}}</view>
+                <view class="querydraw-time">绘画时间: {{item.createTime}}</view>
+            </view>
+        </van-tab>
+        <van-tab title="高级绘画">
+            <view class="querydraw-item" wx:for="{{info}}">
+                <view class="querydraw-title">绘画文本: {{item.input.text}}</view>
+                <view class="querydraw-style">绘画风格: {{item.input.style}}</view>
+                <view class="querydraw-id">绘画生成ID: {{item.id}}</view>
+                <view class="querydraw-time">绘画时间: {{item.createTime}}</view>
+            </view>
+        </van-tab>
+        <van-tab title="基础绘画">
+            <view class="querydraw-item" wx:for="{{info}}">
+                <view class="querydraw-title">绘画文本: {{item.input.text}}</view>
+                <view class="querydraw-style">绘画风格: {{item.input.style}}</view>
+                <view class="querydraw-id">绘画生成ID: {{item.id}}</view>
+                <view class="querydraw-time">绘画时间: {{item.createTime}}</view>
+            </view>
+        </van-tab>
+    </van-tabs>
+</view>

@@ -1,0 +1,84 @@
+{
+  "pages":[
+    "pages/login/login", 
+    "pages/new/new",
+    "pages/newthree/newthree",
+    "pages/newtwo/newtwo",
+    "pages/index/index",  
+    "pages/newone/newone",
+    "pages/queryiden/queryiden",
+    "pages/querydraw/querydraw",
+    "pages/home/home",
+    "pages/seniordraw/seniordraw",
+    "pages/seniorpanel/seniorpanel",
+    "pages/function/function",
+    "pages/keys/keys",
+    "pages/clear/clear",
+    "pages/teletextConverter/teletextConverter",
+    "pages/out/out",
+    "pages/information/information",
+    "pages/otherstyle/otherstyle",
+    "pages/style/style",
+    "pages/dishIdentify/dishIdentify",
+    "pages/draws/draws",
+    "pages/identifys/identifys"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#c2aeff",
+    "navigationBarTextStyle":"black"
+  },
+  "usingComponents": {
+    "van-checkbox": "@vant/weapp/checkbox/index",
+    "van-checkbox-group": "@vant/weapp/checkbox-group/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-uploader": "@vant/weapp/uploader/index",
+    "van-radio": "@vant/weapp/radio/index",
+    "van-radio-group": "@vant/weapp/radio-group/index",
+    "van-calendar": "@vant/weapp/calendar/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-progress": "@vant/weapp/progress/index",
+    "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "@vant/weapp/dropdown-item/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-slider": "@vant/weapp/slider/index",
+    "van-collapse": "@vant/weapp/collapse/index",
+    "van-collapse-item": "@vant/weapp/collapse-item/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index"
+
+  },
+  "tabBar":{
+    "backgroundColor": "#ffffff",
+    "selectedColor":"#c2aeff",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "iconPath":"pages/image/index.png",
+        "selectedIconPath":"pages/image/selectIndex.png",
+        "text":"首页"
+      },
+      {
+        "pagePath":"pages/new/new",
+        "iconPath":"pages/image/news.png",
+        "selectedIconPath":"pages/image/selectNews.png",
+        "text":"趣闻"
+      },
+      {
+        "pagePath":"pages/function/function",
+        "iconPath":"pages/image/function.png",
+        "selectedIconPath":"pages/image/selectFunction.png",
+        "text":"全部功能"
+      },
+      {
+        "pagePath":"pages/home/home",
+        "iconPath":"pages/image/mine.png",
+        "selectedIconPath":"pages/image/selectMine.png",
+        "text":"我的"
+      }
+    ]
+
+},
+  "sitemapLocation": "sitemap.json"
+}

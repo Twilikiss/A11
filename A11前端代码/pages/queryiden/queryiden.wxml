@@ -1,0 +1,40 @@
+<view class="queryiden-header">
+    <van-tabs active="{{ active }}" bind:change="onChange">
+        <van-tab title="图像识别">
+            <view class="queryiden-item" wx:for="{{info}}">
+                <view class="queryiden-img">
+                    <image class="" src="{{item.input}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+                </view>
+                <view class="queryiden-info">
+                    <view class="queryiden-type">识别类型: {{item.type}}</view>
+                    <view class="queryiden-id">识别ID: {{item.id}}</view>
+                    <view class="queryiden-time">识别时间: {{item.createTime}}</view>
+                </view>
+            </view>
+        </van-tab>
+        <van-tab title="图像特效与增强">
+            <view class="queryiden-item" wx:for="{{info}}">
+                <view class="queryiden-img">
+                    <image class="" src="{{item.input}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+                </view>
+                <view class="queryiden-info">
+                    <view class="queryiden-type">识别类型: {{item.type}}</view>
+                    <view class="queryiden-id">识别ID: {{item.id}}</view>
+                    <view class="queryiden-time">识别时间: {{item.createTime}}</view>
+                </view>
+            </view>
+        </van-tab>
+        <van-tab title="OCR识别">
+            <view class="queryiden-item" wx:for="{{info}}">
+                <view class="queryiden-img">
+                    <image class="" src="{{item.input}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+                </view>
+                <view class="queryiden-info">
+                    <view class="queryiden-type">识别类型: {{item.type}}</view>
+                    <view class="queryiden-id">识别ID: {{item.id}}</view>
+                    <view class="queryiden-time">识别时间: {{item.createTime}}</view>
+                </view>
+            </view>
+        </van-tab>
+    </van-tabs>
+</view>

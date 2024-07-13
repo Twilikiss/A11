@@ -1,0 +1,36 @@
+<view class="draws-title">AI绘图结果如下：</view>
+<view class="draws-image">
+    <image class="" src="{{imgUrl}}" />
+</view>
+<view class="draws-width">width:{{width}}</view>
+<view class="draws-height">height:{{height}}</view>
+<view class="draws-conclusion">img_approve_conclusion:{{conclusion}}</view>
+<view class="draws-btn">
+    <button bind:tap="save">保存图片到相册</button>
+    <button bind:tap="appraise">评价</button>
+</view>
+<view class="draws-appraise" wx:if="{{show}}">
+    <view class="draws-appraise-title">评价</view>
+    <view class="draws-appraise-evaluation">
+        效果是否好:
+        <van-radio-group value="{{ evaluation }}" bind:change="changeEvaluation" direction="horizontal">
+            <van-radio name="0" icon-size="16px" shape="square">好</van-radio>
+            <van-radio name="1" icon-size="16px" shape="square">不好</van-radio>
+        </van-radio-group>
+    </view>
+    <view class="draws-appraise-isUsePromptGen">
+        是否使用智能生成prompt:
+        <van-radio-group value="{{ isUsePromptGen }}" bind:change="changePrompt" direction="horizontal">
+            <van-radio name="0" icon-size="16px" shape="square">是</van-radio>
+            <van-radio name="1" icon-size="16px" shape="square">否</van-radio>
+        </van-radio-group>
+    </view>
+    <view class="draws-appraise-prompt">
+        请输入您的意见:
+        <textarea class="draws-appraise-prompt-text" bindinput="drwasText" value="{{textVal}}" name="" id="" cols="30" rows="10" placeholder="请输入..."></textarea>
+    </view>
+    <view class="draws-appraise-btn">
+        <button bind:tap="sumbit">提交</button>
+        <button bind:tap="cancel">取消</button>
+    </view>
+</view>

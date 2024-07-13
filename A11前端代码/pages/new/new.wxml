@@ -1,0 +1,34 @@
+<scroll-view class="new-scroll" scroll-x="true" style="height:200px; white-space: nowrap">
+    <view class="new-item" bind:tap="tonewthree">
+        <image class="" src="http://www.elysialove.xyz/wenxin/img/ERNIE-ViLG.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+        <view class="new-item-title">AI作画的魅力</view>
+        <view class="new-item-text">2023.05.18</view>
+    </view>
+    <view class="new-item">
+        <image class="" src="http://www.elysialove.xyz/wenxin/img/baiduCloud.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+        <view class="new-item-title">AI云计算架构</view>
+        <view class="new-item-text">2023.03.28</view>
+    </view>
+    <view class="new-item">
+        <image class="" src="http://www.elysialove.xyz/wenxin/img/wenxin.jpg" lazy-load="false" binderror="" bindload="" />
+        <view class="new-item-title">文心大模型</view>
+        <view class="new-item-text">2023.03.09</view>
+    </view>
+</scroll-view>
+<view class="new-main">
+    <view class="new-main-item" bind:tap="tonewtwo">
+        <view class="new-main-item-logo">趣闻</view>
+        <view class="new-main-item-title">趣闻 | AI画下的小狗</view>
+        <view class="new-main-item-text">2023.06.03</view>
+    </view>
+    <view class="new-main-item">
+        <view class="new-main-item-logo">趣闻</view>
+        <view class="new-main-item-title">趣闻 | 文心大模型下的ai识别</view>
+        <view class="new-main-item-text">2023.06.11</view>
+    </view>
+    <view class="new-main-item">
+        <view class="new-main-item-logo">趣闻</view>
+        <view class="new-main-item-title">趣闻 | 如何使用云计算架构</view>
+        <view class="new-main-item-text">2023.06.19</view>
+    </view>
+</view>

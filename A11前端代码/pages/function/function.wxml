@@ -1,0 +1,44 @@
+<van-collapse accordion value="{{ activeName }}" bind:change="onChange">
+    <van-collapse-item title="识别" name="1">
+        <view class="function-header">
+            <view class="function-item" wx:for="{{functions}}">
+                <van-uploader max-count="1" bind:after-read="identifys" data-index="{{index}}" bind:tap="getId" class="function-uploadImg">
+                    <image class="" src="{{item.url}}" />
+                </van-uploader>
+                <view class="function-item-text">{{item.text}}</view>
+            </view>
+            <view class="function-item">
+                <van-uploader max-count="1" bind:after-read="identical" class="function-uploadImg">
+                    <image class="" src="../image/identify.png" />
+                </van-uploader>
+                <view class="function-item-text">通用场景识别</view>
+            </view>
+        </view>
+    </van-collapse-item>
+    <van-collapse-item title="绘画" name="2">
+        <view class="function-header">
+            <view class="function-item" wx:for="{{draws}}">
+                <van-uploader max-count="1" bind:after-read="draws" data-index="{{index}}" bind:tap="getId" class="function-uploadImg" bind:tap="getId">
+                    <image class="" src="{{item.url}}" />
+                </van-uploader>
+                <view class="function-item-text">{{item.text}}</view>
+            </view>
+        </view>
+    </van-collapse-item>
+    <van-collapse-item title="文档" name="3">
+        <view class="function-header">
+            <view class="function-item">
+                <van-uploadexter bind:after-read="toclear" class="three-upload" class="function-uploadImg">
+                    <image class="" src="../image/clear.png" />
+                </van-uploadexter>
+                <view class="function-item-text">文档去手写</view>
+            </view>
+            <view class="function-item">
+                <view class="function-uploadImg" bind:tap="toTele">
+                    <image class="" src="../image/generictext.png" />
+                </view>
+                <view class="function-item-text">图文转换</view>
+            </view>
+        </view>
+    </van-collapse-item>
+</van-collapse>

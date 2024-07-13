@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="test" />
+        <module name="com.elysia.apiTest.demoTest" />
+        <module name="WenXinDemo01" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="17">
+      <module name="apiTest" target="1.8" />
+      <module name="demoTest" target="1.8" />
+      <module name="model" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="WenXinDemo01" options="-parameters" />
+      <module name="apiTest" options="-parameters" />
+      <module name="com.elysia.apiTest.demoTest" options="-parameters" />
+      <module name="demoTest" options="-parameters" />
+      <module name="model" options="-parameters" />
+    </option>
+  </component>
+</project>

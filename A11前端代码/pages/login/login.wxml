@@ -1,0 +1,20 @@
+<view class="login-header">
+    <image class="" src="../image/logo.png" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+</view>
+<view class="login-main">
+    <button wx:if="{{flag}}" class="login-main-login" bind:tap="login">微信一键授权登录</button>
+    <!-- <view wx:if="{{flag}}" class="login-main-usephone" bind:tap='showPhone'>手机号登录</view> -->
+    <view class="login-main-phone" wx:if="{{!flag}}">
+        <input type="number" placeholder="请输入手机号" bind:input="getPhone"></input>
+    </view>
+    <view class="login-main-code" wx:if="{{!flag}}">
+        <input type="text" placeholder="请输入验证码" bind:input="getCode"></input>
+        <button bind:tap='setCode' disabled="{{disabled}}">获取验证码</button>
+    </view>
+    <view class="login-main-notice">
+        <van-checkbox value="{{ checked }}" bind:change="onChange" icon-size="14px"  shape="square">
+            我已仔细阅读并同意<span>用户协议</span>
+        </van-checkbox>
+    </view>
+    <button wx:if="{{!flag}}" class="login-btn" bind:tap="login_phone">登录</button>
+</view>

@@ -1,0 +1,60 @@
+Page {
+  width: 100%;
+  height: 100%;
+  background-color: #ab9fd0;
+}
+
+.information-header {
+  width: 100%;
+  /* height: 500rpx; */
+  /* background-color: pink; */
+}
+.information-header image {
+  width: 100%;
+  height: 100%;
+}
+.information-img {
+  width: 100%;
+  height: 300rpx;
+  /* background-color: pink; */
+  position: relative;
+}
+.information-img .information-uploadImg {
+  position: absolute;
+  bottom: 30rpx;
+  left: 40%;
+}
+.information-img image {
+  width: 150rpx;
+  height: 150rpx;
+  position: absolute;
+  bottom: 30rpx;
+  left: 40%;
+  border-radius: 50%;
+}
+.information-next button {
+  width: 60%;
+  background-color: #76d4d4;
+  border-radius: 50rpx;
+  color: #ffffff;
+  font-weight: 700;
+}
+.information-radio {
+  width: 200rpx;
+  margin: auto;
+  margin-bottom: 70rpx;
+}
+.information-phone {
+  width: 60%;
+  margin: 0 auto;
+
+  margin-bottom: 70rpx;
+}
+.information-phone .information-input {
+  background-color: #eee;
+  width: 400rpx;
+  margin: 0 auto;
+  height: 60rpx;
+  letter-spacing: 1rpx;
+  padding-left: 1rem;
+}

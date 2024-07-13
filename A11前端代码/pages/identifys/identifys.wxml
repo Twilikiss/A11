@@ -1,0 +1,15 @@
+<view class="identifys-title" wx:if="{{flag}}">识别结果如下:</view>
+<view class="identifys-header" wx:if="{{flag}}">
+    <image class="" src="{{url}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+</view>
+<view class="identifys-main" wx:if="{{flag}}">
+    <view class="identifys-main-title">{{fileInfo[0].keyword}}</view>
+    <view class="identifys-main-text">{{fileInfo[0].baike_info.description}}</view>
+    <view class="identifys-main-baike" bind:tap="out">详情请见百度百科</view>
+    <view class="identifys-main-other">
+        <view class="identifys-main-other-title">其他可能的结果:</view>
+        <view class="identifys-main-other-item" wx:for="{{fileInfo}}">
+            <view class="identifys-main-other-itemText" wx:if="{{index!=0}}">{{item.keyword}}</view>
+        </view>
+    </view>
+</view>

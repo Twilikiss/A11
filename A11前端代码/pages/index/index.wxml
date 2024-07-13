@@ -1,0 +1,72 @@
+<!-- <view class="top">
+    <view class="top-right">
+        <view class="diQu">选择地区</view>
+    </view>
+    <view class="top-left">
+        <view class="iconfont icon-tongzhi">123</view>
+        <view class="iconfont icon-bijijilu">123</view>
+    </view>
+</view> -->
+<swiper class="lunBoTu" indicator-dots indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#fff" circular autoplay interval="4000">
+    <swiper-item>
+        <image src='http://www.elysialove.xyz/wenxin/img/wenxin.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+        <image src='http://www.elysialove.xyz/wenxin/img/baiduCloud.png'></image>
+    </swiper-item>
+    <swiper-item>
+        <image src='http://www.elysialove.xyz/wenxin/img/ERNIE-ViLG.jpg'></image>
+    </swiper-item>
+</swiper>
+<view class="middle-one">
+    <view class="see">
+        <van-uploader max-count="1" bind:after-read="identifys" class="see-uploadImg">
+            <image class="" src="../image/identify.png" />
+        </van-uploader>
+        <view class="see-text">通用识别</view>
+    </view>
+    <view class="listen">
+        <van-uploader max-count="1" bind:after-read="draws" class="listen-uploadImg">
+            <image class="" src="../image/draw.png" />
+        </van-uploader>
+        <view class="listen-text">通用绘画</view>
+    </view>
+</view>
+<view class="middle-two">
+    <view class="one">
+        <van-uploader bind:after-read="identify" data-index="3" class="one-upload">
+            <image class="" src="../image/food.png" />
+        </van-uploader>
+        <view class="text">菜品识别</view>
+    </view>
+    <view class="two" bind:tap="toTele">
+        <image class="" src="../image/graphic.png" />
+        图文转换
+    </view>
+    <view class="three">
+        <van-uploader bind:after-read="toclear" class="three-upload">
+            <image class="" src="../image/clear.png" />
+        </van-uploader>
+        <view class="text">文档去手写</view>
+    </view>
+    <view class="four" bind:tap="toSenior">
+        <!-- <van-uploader class="four-upload"> -->
+        <image class="" src="../image/seniordraw.png" />
+        <!-- </van-uploader> -->
+        <view class="text">高级绘画</view>
+    </view>
+</view>
+<view class="bottom">
+    <view class="bottomBox" bind:tap="tonews">
+        <view class="left">
+            <image class="" src="../image/ai.jpg" />
+        </view>
+        <view class="right">什么是“AI”，带你走进“AI”的世界</view>
+    </view>
+    <view class="bottomBox">
+        <view class="left">
+            <image class="" src="../image/aii.png" />
+        </view>
+        <view class="right">Ai有多强大，点击进入了解xxxxx</view>
+    </view>
+</view>

@@ -1,0 +1,22 @@
+<view class="home-header">
+    <view class="home-user">
+        <view class="home-user-img">
+            <image class="" src="{{userImg}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+        </view>
+        <view class="home-user-text">
+            <view class="home-user-name">昵称：{{name}}</view>
+            <view class="home-user-sex">性别：{{sex}}</view>
+        </view>
+    </view>
+</view>
+<view class="home-main">
+    <view class="home-main-item" bind:tap="revise">修改个人信息</view>
+    <view class="home-main-item" bind:tap="enquiries">绘画历史记录</view>
+    <view class="home-main-item" bind:tap="identify">识别历史记录</view>
+</view>
+<view class="home-foot">
+    <button bind:tap="loginOut">退出登录</button>
+</view>
+<view class="home-foot">
+    <button bind:tap="clearOut">注销账号</button>
+</view>

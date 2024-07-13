@@ -1,0 +1,59 @@
+/* pages/style/style.wxss */
+Page {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#c2aeff, #ffffff);
+}
+.style-header {
+  width: 100%;
+  font-weight: 700;
+  font-size: 40rpx;
+  color: #eee;
+}
+.style-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.style-group .style-item {
+  width: 256rpx;
+  height: 256rpx;
+  margin-top: 30rpx;
+  /* background-color: pink; */
+  position: relative;
+}
+.style-select {
+  border: 2px solid red;
+}
+.style-group .style-item image {
+  width: 100%;
+  height: 100%;
+  border-radius: 40rpx;
+  opacity: 0.6;
+}
+.style-group .style-item .style-item-text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100rpx;
+  font-size: 40rpx;
+  text-align: center;
+  color: #000;
+  font-weight: 600;
+}
+.style-text {
+  width: 100%;
+  height: 30rpx;
+  margin-top: 40rpx;
+  text-align: center;
+  font-size: 40rpx;
+  /* color: #eee; */
+  font-weight: 700;
+}
+.style-btn {
+  width: 200rpx;
+  height: 50rpx;
+  margin: 0 auto;
+  margin-top: 60rpx;
+}

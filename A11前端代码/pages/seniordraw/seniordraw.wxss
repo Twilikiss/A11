@@ -1,0 +1,109 @@
+Page {
+  width: 100%;
+  height: 100%;
+  /* background-color: #f9fafc; */
+  background: linear-gradient(#c2aeff, #ffffff);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.senior-title {
+  width: 100%;
+  height: 30rpx;
+  /* background-color: #404040; */
+  line-height: 30rpx;
+  font-size: 48rpx;
+  color: #eee;
+  font-weight: 600;
+  text-align: center;
+  /* margin: 20rpx; */
+}
+.senior-textarea {
+  width: 100%;
+  height: 200rpx;
+  background-color: #ffffff;
+  font-size: 30rpx;
+}
+.senior-style {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-bottom: 100rpx; */
+}
+.senior-style .senior-style-item {
+  width: 200rpx;
+  height: 80rpx;
+  /* background-color: rgba(104, 30, 241, 0.5); */
+  line-height: 100rpx;
+  font-weight: 700;
+  color: #ffff;
+  text-align: center;
+  margin: 20rpx;
+  box-shadow: 8rpx 8rpx 10rpx;
+}
+.style-popup {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+}
+.senior-main {
+  width: 100%;
+  height: 200rpx;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: space-evenly;
+}
+.senior-main .senior-main-text {
+  width: 60%;
+  height: 100%;
+  /* line-height: 200rpx; */
+  /* overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; */
+  overflow-wrap: break-word;
+}
+.senior-main .senior-main-btn {
+  width: 30%;
+  height: 80rpx;
+  margin: auto;
+  background-color: #4714a9;
+  text-align: center;
+  font-size: 32rpx;
+  color: #eee;
+  font-weight: 700;
+  line-height: 80rpx;
+  border-radius: 15rpx;
+}
+.senior-slider {
+  width: 400rpx;
+  height: 100rpx;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 24rpx;
+}
+.senior-draw {
+  width: 250rpx;
+  height: 100rpx;
+  margin: 60rpx auto;
+}
+.senior-basis {
+  width: 150rpx;
+  height: 150rpx;
+  background-color: #f3efff;
+  margin: 0 auto;
+  font-size: 26rpx;
+  font-weight: 600;
+  position: relative;
+}
+.senior-basis .senior-basis-upload {
+  width: 150rpx;
+  height: 150rpx;
+  /* position: absolute; */
+}
+.senior-basis image {
+  width: 150rpx;
+  height: 150rpx;
+  position: absolute;
+}

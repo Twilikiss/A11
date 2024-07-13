@@ -1,0 +1,57 @@
+<view class="senior-title">Prompt提示小助手</view>
+<textarea class="senior-textarea" value="{{text}}" placeholder="输入您的想法..." rows="5" maxlength="200" bindinput="drwasText"></textarea>
+<view class="senior-style">
+    <van-cell title="风格" bind:click="showStyle" class="senior-style-item" />
+    <van-popup show="{{ showStyle }}" position="bottom" custom-style="height: 40%;" bind:close="closeStyle">
+        <view class="style-popup" wx:for="{{styleInfo}}" data-index="{{index}}" bind:tap="selectStyle">
+            {{item}}
+        </view>
+    </van-popup>
+    <van-cell title="光线" bind:click="showLight" class="senior-style-item" />
+    <van-popup show="{{ showLight }}" position="bottom" custom-style="height: 40%;" bind:close="closeLight">
+        <view class="style-popup" wx:for="{{lightInfo}}" data-index="{{index}}" bind:tap="selectLight">
+            {{item}}
+        </view>
+    </van-popup>
+    <van-cell title="相机" bind:click="showCamera" class="senior-style-item" />
+    <van-popup show="{{ showCamera }}" position="bottom" custom-style="height: 40%;" bind:close="closeCamera">
+        <view class="style-popup" wx:for="{{cameraInfo}}" data-index="{{index}}" bind:tap="selectCamera">
+            {{item}}
+        </view>
+    </van-popup>
+    <van-cell title="艺术家" bind:click="showArtist" class="senior-style-item" />
+    <van-popup show="{{ showArtist }}" position="bottom" custom-style="height: 40%;" bind:close="closeArtist">
+        <view class="style-popup" wx:for="{{artistInfo}}" data-index="{{index}}" bind:tap="selectArtist">
+            {{item}}
+        </view>
+    </van-popup>
+    <van-cell title="尺寸" bind:click="showSize" class="senior-style-item" />
+    <van-popup show="{{ showSize }}" position="bottom" custom-style="height: 40%;" bind:close="closeSize">
+        <view class="style-popup" wx:for="{{sizeInfo}}" data-index="{{index}}" bind:tap="selectSize" wx:if="{{!sflag}}">
+            {{item.text}}
+        </view>
+        <view class="style-popup" wx:for="{{versionInfo}}" data-index="{{index}}" bind:tap="selectVersion" wx:if="{{sflag}}">
+            {{item}}
+        </view>
+    </van-popup>
+</view>
+<view class="senior-slider">
+    <view>数量(1~5):{{num}}</view>
+    <van-slider bind:change="changeNum" bar-height="4px" active-color="#c2aeff" min="0" max="5"></van-slider>
+</view>
+<view class="senior-main">
+    <view class="senior-main-text">{{textVal}}</view>
+    <view class="senior-main-btn" bind:tap="copy">复制提示词</view>
+</view>
+<view class="senior-basis">
+    <van-uploader bind:after-read="upload" class="senior-basis-upload" wx:if="{{!flag}}"></van-uploader>
+    <image class="" src="{{file}}" wx:else />
+    <view class="senior-basis-text">基于图片生成</view>
+</view>
+<view class="senior-slider">
+    <view>参考图片影响因子(1~10):{{changeDegree}}</view>
+    <van-slider bind:change="changeDeg" bar-height="4px" active-color="#c2aeff" min="0" max="10"></van-slider>
+</view>
+<view class="senior-draw">
+    <button bind:tap="draw">开始绘画</button>
+</view>
